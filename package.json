@@ -1,0 +1,51 @@
+{
+  "name": "reacter",
+  "version": "1.0.0",
+  "description": "Carlos Azaustre tutorial",
+  "main": "/build/app.js",
+  "author": "and3",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --colors",
+    "serve": "webpack-dev-server --content-base build/ --colors --progress",
+    "start": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-latest": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.27.3",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb-base": "^11.1.2",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-no-unused-vars-rest": "^1.0.4",
+    "eslint-plugin-react": "^6.10.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.1",
+    "redux-devtools-extension": "^2.13.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.0",
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-livereload-plugin": "^0.10.0"
+  },
+  "dependencies": {
+    "immutability-helper": "^2.1.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "normalize-css": "^2.3.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "4.0,0-alpha.4",
+    "redux": "^3.6.0",
+    "uuid": "^3.0.1"
+  }
+}
