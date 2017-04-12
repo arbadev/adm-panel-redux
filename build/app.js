@@ -28421,13 +28421,8 @@ var App = function App(props) {
         exactly: true,
         pattern: '/',
         render: function render() {
-          if (props.user) {
-            return _react2.default.createElement(_Main2.default, { user: props.user });
-          } else {
-            return _react2.default.createElement(_Login2.default, {
-              onAuth: handleOnAuth
-            });
-          }
+          var renderComponent = props.user ? _react2.default.createElement(_Main2.default, { user: props.user }) : _react2.default.createElement(_Login2.default, { onAuth: handleOnAuth });
+          return renderComponent;
         }
       }),
       _react2.default.createElement(_reactRouter.Match, {
@@ -28723,15 +28718,7 @@ var _actions = __webpack_require__(35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var initialState = {
-  photoUrl: 'https://lh5.googleusercontent.com/-s9_Tt3cFDr0/AAAAAAAAAAI/AAAAAAAAABU/pokobD-s618/photo.jpg',
-  email: 'a3barradas@gmail.com',
-  displayName: 'Andres Barradas',
-  location: 'Pzo, Venezuela',
-  onOpenText: false,
-  retweets: [],
-  favorites: []
-};
+var initialState = null;
 
 exports.default = function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
