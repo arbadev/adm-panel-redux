@@ -13,7 +13,7 @@
     "__DEBUG__": true,
     "__COVERAGE__": true,
     "__BASENAME__": true,
-    "console": true,
+    "console": true
   },
   "settings": {
     "import/resolver": "webpack"
@@ -37,7 +37,7 @@
     "react/require-default-props": 0,
     "react/forbid-prop-types": 0,
     "react/no-unused-prop-types": 0,
-    # "react/jsx-filename-extension": [2, {"extensions": [".js", ".jsx"]}],
-    "no-unused-vars-rest/no-unused-vars": [2, { "ignoreDestructuredVarsWithRest": true }],
+    "react/jsx-filename-extension": [2, {"extensions": [".js", ".jsx"]}],
+    "no-unused-vars-rest/no-unused-vars": [2, { "ignoreDestructuredVarsWithRest": true }]
   }
 }
